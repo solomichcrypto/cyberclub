@@ -1,121 +1,143 @@
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #000000;
-    color: #ffffff;
-}
+    header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .nav a {
+            text-decoration: none;
+            font-size: 20px;
+            margin: 18px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        .nav a:hover {
+            color: #ff6600;
+        }
 
-.nav a {
-    text-decoration: none;
-    font-size: 20px;
-    margin: 18px;
-    color: #ffffff;
-    font-weight: 600;
-}
+        /* СТИЛИ ДЛЯ ТАЙМЕРА */
+        .promo-banner {
+            background: linear-gradient(135deg, #ff6600, #ff3300);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+        }
+        .promo-banner h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .promo-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .countdown-item {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px 25px;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+        .countdown-number {
+            font-size: 36px;
+            font-weight: bold;
+            display: block;
+        }
+        .countdown-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            display: block;
+        }
 
-.nav a:hover {
-    color: #ff6600;
+        .page {
+            position: relative;
+            background-image: url("cyberclub.jpg");
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 25px;
+        }
+        .page::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .page>* {
+            position: relative;
+            z-index: 2;
+        }
+        .about {
+            display: flex;
+            justify-content: space-around;
+            background-color: #000000;
+            padding: 40px;
+            align-items: center;
+        }
+        .text {
+            width: 50%;
+            color:#ffffff;
+            font-size: 150%;
+        }
+        .about img {
+            height:  400px;
+        }
+        .hadding {
+            color:#ffffff;
+        }
+        .cards {
+            display:flex;
+            justify-content: space-around;
+            background-color: #000000;
+            color: white;
+        }
+        .card h2:hover {
+            color: red;
+        }
+        .card {
+            width: 40%;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid white;
+            padding-bottom: 8px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer-row {
+            display:flex;
+            justify-content: space-around;
+            background-color: #000000;
+            color:#ffffff;
+            padding: 20px;
+            font-size: 15px;
+        }
+        .links {
+            display:flex;
+            flex-direction: column;
+        }
+        .links a{
+            color: white;
+            text-decoration: none;
+        }
 
-}
-
-
-.page {
-    position: relative;
-    background-image: url("cyberclub.jpg");
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 25px;
-}
-
-.page::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.page>* {
-    position: relative;
-    z-index: 2;
-}
-
-.about {
-    display: flex;
-    justify-content: space-around;
-    background-color: #000000;
-    padding: 40px;
-    align-items: center;
-
-}
-
-.text {
-    width: 50%;
-    color:#ffffff;
-    font-size: 150%;
-
-}
-
-.about img {
-    height:  400px;
-}
-
-.hadding {
-    color:#ffffff;
-}
-
-
-.cards {
-    display:flex;
-    justify-content: space-around;
-    background-color: #000000;
-    color: white;
-    
-
-}
-.card h2:hover {
-    color: red;
-
-}
-
-.card {
-    width: 40%;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid white; 
-    padding-bottom: 8px; 
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer-row {
-    display:flex;
-    justify-content: space-around;
-    background-color: #000000;
-    color:#ffffff;
-    padding: 20px;
-    font-size: 15px;
-}
-
-.links {
-    display:flex;
-    flex-direction: column;
-    
-}
-
-.links a{
-    color: white;
-    text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
